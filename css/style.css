@@ -434,3 +434,23 @@ header h1{
     }
 
 }
+
+/* ===============================
+   料金表画像
+=============================== */
+
+.price-image{
+
+    display:block;
+
+    width:100%;
+
+    max-width:100%;
+
+    height:auto;
+
+    margin:0 auto;
+
+    border-radius:15px;
+
+}
