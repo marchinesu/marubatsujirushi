@@ -1,0 +1,145 @@
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media screen and (max-width: 1024px){
+
+    header h1{
+
+        font-size:2rem;
+
+    }
+
+    #profile{
+
+        width:92vw;
+
+    }
+
+    #menu-buttons{
+
+        width:92vw;
+
+    }
+
+}
+
+
+/* =========================================================
+   Smartphone
+========================================================= */
+
+@media screen and (max-width: 768px){
+
+    header{
+
+        padding:25px 15px;
+
+    }
+
+    header h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .profile-card{
+
+        width:100%;
+
+    }
+
+    #profile{
+
+        width:94vw;
+
+        margin:25px auto;
+
+    }
+
+    #menu-buttons{
+
+        width:94vw;
+
+        gap:18px;
+
+        margin:35px auto 60px;
+
+    }
+
+    .menu-btn{
+
+        padding:18px 0;
+
+        font-size:1.1rem;
+
+    }
+
+    #menuToggle{
+
+        width:55px;
+
+        height:55px;
+
+        font-size:1.7rem;
+
+        top:15px;
+
+        right:15px;
+
+    }
+
+    #menu{
+
+        width:260px;
+
+    }
+
+    #topButton{
+
+        right:15px;
+
+        bottom:15px;
+
+        padding:12px 18px;
+
+        font-size:.9rem;
+
+    }
+
+}
+
+
+/* =========================================================
+   Small Smartphone
+========================================================= */
+
+@media screen and (max-width: 480px){
+
+    header h1{
+
+        font-size:1.5rem;
+
+    }
+
+    #profile{
+
+        width:96vw;
+
+    }
+
+    #menu-buttons{
+
+        width:96vw;
+
+    }
+
+    .menu-btn{
+
+        font-size:1rem;
+
+        padding:16px 0;
+
+    }
+
+}

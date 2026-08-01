@@ -1,0 +1,99 @@
+/* =========================================================
+   お問い合わせページ
+========================================================= */
+
+#contact-form{
+
+    margin-top:20px;
+
+}
+
+#contact-form label{
+
+    font-weight:bold;
+
+    color:#6D9C73;
+
+}
+
+#contact-form input,
+#contact-form textarea{
+
+    width:100%;
+
+    margin-top:8px;
+
+    padding:12px;
+
+    border:2px solid #C89A54;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+    font-family:inherit;
+
+    background:#fff;
+
+}
+
+#contact-form textarea{
+
+    resize:vertical;
+
+}
+
+#contact-form button{
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+}
+.submit-btn{
+
+    display:block;
+
+    width:220px;
+
+    margin:20px auto 0;
+
+    padding:16px 24px;
+
+    background:#6D9C73;
+
+    color:#fff;
+
+    border:3px solid #C89A54;
+
+    border-radius:999px;
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    letter-spacing:.08em;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+    transition:.25s;
+
+}
+
+.submit-btn:hover{
+
+    background:#7FAE84;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 22px rgba(0,0,0,.2);
+
+}
+
+.submit-btn:active{
+
+    transform:translateY(1px);
+
+}

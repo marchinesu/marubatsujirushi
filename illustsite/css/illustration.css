@@ -1,0 +1,25 @@
+body {
+  min-height: 100vh;
+  background: #6a8caf;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 40px 40px;
+
+}
+
+.page-content {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.back-button {
+  margin-top: 40px;
+}

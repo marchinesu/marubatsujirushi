@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店の夜</title>
+
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- このページ専用CSS -->
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+
+<body>
+
+    <!-- ===== loading ===== -->
+    <div id="loading">
+        <div class="fog"></div>
+        <div class="loading-text">loading...</div>
+    </div>
+
+
+    <header class="site-header">
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">Portfolio</a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="achievements.html">実績</a></li>
+                <li><a href="illustration.html">イラスト</a></li>
+                <li><a href="goods.html">グッズ</a></li>
+                <li><a href="request.html">ご依頼</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="shop-inside"></div>
+
+    <!-- 扉 -->
+    <div class="door-frame">
+        <div class="roof" id="roof">
+            <img src="./img/roof.png" class="roof-image">
+        </div>
+
+        <div class="door-row">
+            <div class="door-left" id="doorLeft">
+                <img src="./img/leftdoor.png" class="door-image">
+            </div>
+            <div class="door-right" id="doorRight">
+                <img src="./img/rightdoor.png" class="door-image">
+            </div>
+        </div>
+
+        <div class="road" id="road">
+            <img src="./img/road.png" class="road-image">
+        </div>
+    </div>
+
+    <!-- 店内 -->
+    <div class="inside-content">
+        <div class="flyer" id="flyer">Profile</div>
+
+        <div class="button-wrapper" id="buttons">
+            <div class="main-buttons">
+                <a href="achievements.html" class="main-btn">能力/実績</a>
+                <a href="illustration.html" class="main-btn">イラスト</a>
+                <button>Goods</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 下部ナビボタン ===== -->
+    <div class="bottom-nav" id="bottomNav">
+        <a href="request.html" class="bottom-btn">依頼ページ</a>
+        <a href="contact.html" class="bottom-btn">お問い合わせ</a>
+    </div>
+
+    <!-- 共通JS -->
+    <script src="js/common.js"></script>
+    <!-- このページ専用JS -->
+    <script src="js/shop.js"></script>
+</body>
+
+</html>

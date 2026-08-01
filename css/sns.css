@@ -1,0 +1,157 @@
+/* ===============================
+   配信リンクボタン
+=============================== */
+
+.stream-link{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    width:260px;
+    margin:15px 0;
+    padding:14px 22px;
+
+    background:#6D9C73;
+    color:#fff;
+
+    border:3px solid #C89A54;
+    border-radius:999px;
+
+    font-size:1.1rem;
+    font-weight:bold;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.12);
+    transition:.3s;
+
+}
+
+.stream-link:hover{
+
+    background:#7FAE84;
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.18);
+
+}
+
+/* ===============================
+   配信画像
+=============================== */
+
+.image-row{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:35px;
+    margin-bottom:40px;
+
+}
+
+.image-row img{
+
+    display:block;
+
+    height:500px;      /* ←260pxから大きく */
+    width:auto;
+
+    border-radius:18px;
+    transition:.3s;
+
+}
+
+
+/* ===============================
+   スマホ
+=============================== */
+
+@media (max-width:768px){
+
+    .image-row{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+    .image-row img{
+
+        width:100%;
+        max-width:500px;
+
+        height:auto;
+
+    }
+
+}
+
+/* ===============================
+   Fan Art 横スクロール
+=============================== */
+
+.fanart-scroll{
+
+    overflow-x:auto;
+
+    padding-bottom:15px;
+
+}
+
+
+.fanart-list{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+.fanart-item{
+
+    min-width:300px;
+
+    flex-shrink:0;
+
+}
+
+
+/* 一覧ボタン */
+
+.fanart-more{
+
+    display:block;
+
+    width:250px;
+
+    margin:30px auto 0;
+
+    padding:15px;
+
+    text-align:center;
+
+    background:#6D9C73;
+
+    color:#fff;
+
+    border:3px solid #C89A54;
+
+    border-radius:999px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.fanart-more:hover{
+
+    transform:translateY(-4px);
+
+    background:#7FAE84;
+
+}

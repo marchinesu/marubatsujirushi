@@ -1,0 +1,30 @@
+portfolio/
+│
+├── index.html
+│
+├── css/
+│   ├── style.css
+│   ├── loading.css
+│   └── responsive.css
+│
+├── js/
+│   ├── loading.js
+│   ├── animation.js
+│   └── script.js
+│
+├── img/
+│   ├── butterfly.png
+│   ├── profile.jpg
+│   ├── logo.png
+│   ├── works/
+│   ├── vtuber/
+│   └── goods/
+│
+├── pages/
+│   ├── works.html
+│   ├── commission.html
+│   └── contact.html
+│
+└── assets/
+    ├── icons/
+    └── fonts/

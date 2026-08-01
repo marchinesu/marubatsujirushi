@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご依頼</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/request.css">
+    <style>
+        .page-content {
+            text-align: left;
+        }
+
+        .page-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .goods-item {
+            display: flex;
+            gap: 20px; /* 画像とテキストの間 */
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .goods-img {
+            width: 200px;
+            height: auto;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .goods-info {
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .goods-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .goods-info a:hover {
+            color: #ffcc88;
+            text-decoration: underline;
+        }
+
+        .note {
+            color: #ffcc88;
+            font-size: 0.95rem;
+            margin-top: 5px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading">
+        <div class="fog"></div>
+        <div class="loading-text">loading...</div>
+    </div>
+
+    <header class="site-header">
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="achievements.html">実績</a></li>
+                <li><a href="illustration.html">イラスト</a></li>
+                <li><a href="goods.html">グッズ</a></li>
+                <li><a href="request.html">ご依頼</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-content">
+        <h1>ご依頼について</h1>
+
+        <ul>
+            <li class="goods-item">
+                <img src="img/sample_icon.png" alt="アイコンサンプル" class="goods-img">
+                <div class="goods-info">
+                    <strong>アイコン制作</strong><br>
+                    目安料金：¥2,000〜¥5,000<br>
+                    サイズ：512×512 px 推奨<br>
+                    ファイル形式：PNG<br>
+                    納期：要相談<br>
+                    <a href="https://twitter.com/client_icon" target="_blank" rel="noopener noreferrer">依頼者Twitter</a>
+                </div>
+            </li>
+
+            <li class="goods-item">
+                <img src="img/sample_logo.png" alt="ロゴサンプル" class="goods-img">
+                <div class="goods-info">
+                    <strong>ロゴ制作</strong><br>
+                    目安料金：¥5,000〜¥15,000<br>
+                    サイズ：用途に応じて調整<br>
+                    ファイル形式：PNG / SVG<br>
+                    納期：要相談<br>
+                    <a href="https://example.com/client_logo" target="_blank" rel="noopener noreferrer">依頼者サイト</a>
+                </div>
+            </li>
+
+            <li class="goods-item">
+                <img src="img/sample_illust.png" alt="一枚絵サンプル" class="goods-img">
+                <div class="goods-info">
+                    <strong>一枚絵</strong><br>
+                    目安料金：¥10,000〜¥30,000<br>
+                    用途：Vtuberサムネイル、個人観賞用など<br>
+                    サイズ：1920×1080 px 推奨<br>
+                    ファイル形式：PNG / PSD<br>
+                    納期：要相談<br>
+                    <span class="note">※描く範囲によって料金が変わります</span><br>
+                    <a href="https://twitter.com/client_illust" target="_blank" rel="noopener noreferrer">依頼者Twitter</a>
+                </div>
+            </li>
+
+            <li class="goods-item">
+                <img src="img/sample_vtuber.png" alt="Vtubeアバターデザインサンプル" class="goods-img">
+                <div class="goods-info">
+                    <strong>Vtubeアバター（デザイン）</strong><br>
+                    目安料金：¥20,000〜¥50,000<br>
+                    サイズ：Live2D対応可<br>
+                    ファイル形式：PSD / Live2Dモデル<br>
+                    納期：要相談
+                </div>
+            </li>
+
+            <li class="goods-item">
+                <img src="img/sample_vtuber_model.png" alt="Vtubeアバターモデリングサンプル" class="goods-img">
+                <div class="goods-info">
+                    <strong>Vtubeアバター（モデリング）</strong><br>
+                    目安料金：¥50,000〜¥100,000<br>
+                    Live2Dモデリング対応<br>
+                    納期：要相談<br>
+                    <span class="note">※デザインは含まれません。既存のデザインをモデリングする場合の価格です</span>
+                </div>
+            </li>
+
+            <li class="goods-item">
+                <img src="img/sample_design.png" alt="簡易デザインサンプル" class="goods-img">
+                <div class="goods-info">
+                    <strong>簡易デザイン</strong><br>
+                    目安料金：¥1,000〜¥5,000<br>
+                    用途：SNSアイコン、バナー、簡単なイラスト等<br>
+                    納期：要相談
+                </div>
+            </li>
+        </ul>
+
+        <p class="note">その他のご依頼や詳細はお問い合わせよりご相談ください。</p>
+
+        <div class="back-button">
+            <a href="index.html" class="main-btn">ホームへ戻る</a>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>

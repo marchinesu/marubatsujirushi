@@ -1,0 +1,99 @@
+html, body {
+  min-height: 2600px;
+  background: #9b6952;
+  padding-top: 100px;
+}
+
+/* 店内光 */
+.shop-inside {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center,
+      rgba(255, 200, 120, 0.35),
+      rgba(0, 0, 0, 1));
+  z-index: -2;
+}
+
+/* ===== 扉 ===== */
+.door-frame { position: fixed; inset: 50px 0 0 0; display: flex; flex-direction: column; z-index: 3; }
+.roof { width: 100%; height: 100px; flex-shrink: 0; display: flex; justify-content: center; align-items: center; overflow: hidden; transition: opacity 0.05s linear; }
+.roof-image { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.door-row { flex: 0 0 auto; width: 100%; aspect-ratio: 3842 / 1849; display: flex; }
+.door-left, .door-right { width: 50%; height: 100%; display: flex; justify-content: center; align-items: center; }
+.door-left { transform-origin: left center; }
+.door-right { transform-origin: right center; }
+.door-image { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+/* 道 */
+.road { width: 100%; flex-shrink: 0; opacity: 1; transition: opacity 0.05s linear; min-height: 100vh; }
+.road-image { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* スマホ縦長 */
+@media (max-aspect-ratio: 3/4) {
+  .door-row { aspect-ratio: 3842 / 1849; max-height: 60vh; }
+  .road { flex-grow: 1; }
+}
+
+/* 店内 */
+.inside-content { position: fixed; inset: 100px 0 0 0; z-index: 4; pointer-events: none; }
+.flyer { position: fixed; top: 0; left: 50%; width: 130px; height: 170px; background: linear-gradient(#fffd99, #ffbb55); border: 2px solid #fff; border-radius: 6px; display: flex; justify-content: center; align-items: center; font-weight: bold; color: #333; opacity: 0; transform: translate(-50%, -220px); }
+.button-wrapper { position: fixed; top: 45%; left: 50%; transform: translate(-50%, -50%); z-index: 5; opacity: 0; }
+.main-buttons, .contact-buttons { display: flex; gap: 12px; justify-content: center; margin-bottom: 10px; }
+.button-wrapper button { padding: 10px 16px; border-radius: 8px; border: 2px solid #fff; background: rgba(255, 255, 255, 0.1); color: #fff; }
+.button-wrapper button:hover { background: #ffcc88; color: #000; }
+
+
+.main-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;   /* 折り返さない */
+  gap: 12px;           /* ボタン間のスペース */
+}
+
+.main-buttons a,
+.main-buttons button {
+  display: inline-block;
+  padding: 10px 20px; /* 横幅を少し広げる */
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap; /* テキストの改行を防止 */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.main-buttons a:hover,
+.main-buttons button:hover {
+  background: #ffcc88;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+
+/* 下部ナビ */
+.bottom-nav { position: fixed; bottom: 50px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; gap: 12px; z-index: 6; opacity: 0; pointer-events: none; transition: opacity 0.4s ease, transform 0.4s ease; }
+.bottom-nav.show { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+.bottom-btn { padding: 12px 18px; border-radius: 10px; border: 2px solid #ffcc88; background: rgba(255, 200, 120, 0.25); color: #fff; text-decoration: none; font-weight: bold; letter-spacing: 0.05em; transition: all 0.25s ease; backdrop-filter: blur(4px); }
+.bottom-btn:hover { background: #fff; color: #000; }
+
+.main-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.main-btn:hover {
+  background: #ffcc88;
+  color: #000;
+  transform: translateY(-3px);
+}

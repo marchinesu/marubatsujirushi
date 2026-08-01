@@ -1,0 +1,96 @@
+/* ===== 全体 ===== */
+body {
+  min-height: 100vh;
+  background: #6a8caf; /* 背景そのまま */
+  color: #fff;
+  font-family: sans-serif;
+  padding: 100px 20px 40px;
+  margin: 0;
+}
+
+/* ページ全体を画面幅にフィット */
+.page-content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* タイトル */
+.page-content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* カード風アイテム */
+.goods-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 0 auto 30px auto; /* 上下30pxのマージン＋横方向中央 */
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+
+/* 画像 */
+.goods-img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border: 1px solid #ccc;
+}
+
+/* テキスト */
+.goods-info {
+  flex: 1;
+  color: #003366 !important;  /* 青文字 */
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* リンク */
+.goods-info a {
+  color: #003366 !important;
+  text-decoration: none;
+}
+.goods-info a:hover {
+  color: #ffcc88;
+  text-decoration: underline;
+}
+
+/* 注釈 */
+.note {
+  color: #ffcc88;
+  font-size: 0.95rem;
+  margin-top: 5px;
+  display: block;
+}
+
+/* ホームへ戻る */
+.back-button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.main-btn:hover {
+  background: #ffcc88;
+  color: #000;
+  transform: translateY(-3px);
+}
